@@ -1,0 +1,7 @@
+{
+  "title": "Wavetapper",
+  "artist": "Frums",
+  "audio": "audio.wav",
+  "offset": 0.0,
+  "grid": { "cols": 4, "rows": 4 }
+}

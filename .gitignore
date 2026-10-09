@@ -1,0 +1,14 @@
+# audio and video are never committed; the user supplies their own
+songs/*/audio.*
+*.mp4
+*.mkv
+*.webm
+*.avi
+*.mov
+
+# analysis caches and backups
+songs/*/samples.npz
+songs/*/blocks.json.bak
+
+__pycache__/
+.pytest_cache/

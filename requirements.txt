@@ -1,0 +1,8 @@
+# playback (main.py) only needs this one:
+just_playback
+
+# analysis tools (tools/cli.py):
+opencv-python
+numpy
+typer
+rich
