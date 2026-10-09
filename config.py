@@ -2,28 +2,32 @@
 
 GRID_COLS = 4
 GRID_ROWS = 4
-BLOCK_W = 2   # '#' characters per block, across
-BLOCK_H = 2   # rows per block, down
+BLOCK_W = 4   # '#' characters per block, across
+BLOCK_H = 4   # rows per block, down
 GAP_X = 2     # empty columns between blocks
 GAP_Y = 1     # empty rows between blocks
 FPS = 30
 
-# (dim, lit) 256-colour codes, roughly matched to the reference image.
+# (dim, lit) 256-colour codes. Every block is the same grey when unlit (DIM_GREY) so that the
+# lit colours stand out; the lit colours are roughly matched to the reference image.
+# Greys run from 232 (almost black) to 255 (almost white): try 238 for darker, 244 for lighter.
+DIM_GREY = 240
+
 DEFAULT_PALETTE = [
-    (52, 196),    # red
-    (94, 208),    # orange-brown
-    (100, 226),   # olive yellow
-    (64, 118),    # olive green
-    (22, 46),     # green
-    (28, 34),     # dark green
-    (23, 43),     # teal
-    (30, 51),     # cyan teal
-    (17, 27),     # navy
-    (18, 33),     # blue
-    (19, 21),     # deep blue
-    (54, 129),    # purple
-    (53, 165),    # magenta purple
-    (88, 197),    # maroon
-    (236, 250),   # dark grey
-    (244, 255),   # light grey
+    (DIM_GREY, 196),      # red
+    (DIM_GREY, 208),      # orange-brown
+    (DIM_GREY, 226),      # olive yellow
+    (DIM_GREY, 118),      # olive green
+    (DIM_GREY, 46),       # green
+    (DIM_GREY, 34),       # dark green
+    (DIM_GREY, 43),       # teal
+    (DIM_GREY, 51),       # cyan teal
+    (DIM_GREY, 27),       # navy
+    (DIM_GREY, 33),       # blue
+    (DIM_GREY, 21),       # deep blue
+    (DIM_GREY, 129),      # purple
+    (DIM_GREY, 165),      # magenta purple
+    (DIM_GREY, 197),      # maroon
+    (DIM_GREY, 250),      # dark grey
+    (DIM_GREY, 255),      # light grey
 ]
